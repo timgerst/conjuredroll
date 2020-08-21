@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conjured Roll</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="imgs/dicelogo.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="group">
+        <img class="rollLogo" src="imgs/dicelogo.png"/> 
+        <input 
+          type="text" 
+          id="rollInput" 
+          placeholder="Describe the creatures and their attacks"
+          class="rollInput">
+        <label class="helpLabel" id="helpLabel">?</label>
+      </div>
+      <div class="options">
+        <label>vs. AC</label>
+        <input class="acInput" id="acInput" type="number">
+        <label class="errorLabel" id="errorLabel"> </label>
+      </div>
+      <div class="helpBox" id="helpBox">
+        <div><b>Syntax</b> [# creatures] [name] WITH [Attack1] AND [Attack2] AND ...</div>
+        <div><b>Attack Syntax</b> [# of attacks] [name] [+/-][Damage Modifier] [# of dice]d[size of dice] [+/-][damage modifier]</div>
+        <div><b>Example</b> 6 Bear WITH Bite +4 1d6 +2 AND 2 +3 Claw 2d4 +2</div> 
+      </div>
+      <div class="output" id="output"></div>
+    </div>
+    <footer>
+        ConjuredRoll <a href="https://github.com/timgerst/conjuredroll">GitHub source</a>
+    </footer>
+  </body>
+</html>
